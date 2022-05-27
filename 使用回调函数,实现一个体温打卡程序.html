@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        1.如何编写函数?
+        function name(parameter1,parameter2,parameter3...){
+            body
+        }
+        2.什么是参数以及如何使用它们?
+        通过参数将任意值传给函数;一部分函数调用时需要指定参数,在()中填入参数进行调用
+        */
+       function showMessage(name){
+           let Hello = '你好'+name
+           return Hello;
+       }
+       console.log(showMessage('朱先俊'))
+       /*
+       3.如何从函数返回值
+       执行到 return 语句,停止执行.如果有调用者,返回值给调用者.
+       4.如何使用匿名函数,箭头函数
+       匿名函数没有函数名,一般与事件响应程序使用   例: button.function(){...}  OR  通过将其赋值给变量,通过变量调用  例:var a = function(){...}
+       箭头函数是函数表示式的简写,使用方式 (参数) => {表达式}
+       5.什么是回调函数? 如何使用函数表达式,回调函数?
+       是个函数,被一个函数调用,不过是作为参数(行参)调用;
+       定义可回调函数: function calculate (参数1,参数2,callbackFunction){...};
+        回调函数:   function sum (参数1,参数2){...};
+       调用回调函数: alert(calculate(参数1,参数2,sum));
+       6.函数定义有几种方式?声明与表达式区别?函数表达式,匿名函数区别?
+       三种:声明,表达式,构造;表达式必须在语句后执行;当函数表达式没有名称就是匿名函数
+       */
+
+    </script>
+</body>
+</html>
